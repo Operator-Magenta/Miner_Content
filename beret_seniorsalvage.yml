@@ -1,0 +1,11 @@
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSeniorSalvager
+  name: берет утилизатора
+  description: Берет ветерана утилизационных работ.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret_seniorsalvager.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/beret_seniorsalvager.rsi

@@ -1,0 +1,14 @@
+
+- type: entity
+  name: маленькая аптечка первой помощи
+  description: "Удобная аптечка в вашем кармане."
+  parent: Medkit
+  id: SmallMedkit
+  components:
+  - type: Sprite
+    state: smallfirstaid
+  - type: Item
+    heldPrefix: smallfirstaid
+    size: 10
+  - type: Storage
+    capacity: 20

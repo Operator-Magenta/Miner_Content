@@ -1,0 +1,23 @@
+
+- type: entity
+  name: Махаров
+  parent: BaseWeaponPistol
+  id: WeaponPistolMakarov
+  description: Древний Пистолет Махарова, адаптированный под калибр .35. Использует патроны калибра .35 авто.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/makarov.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Pistols/makarov.rsi
+  - type: Gun
+    fireRate: 5
+    availableModes:
+    - FullAuto
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg

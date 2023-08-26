@@ -1,0 +1,32 @@
+
+- type: entity
+  name: прото-плазменный резак
+  parent: BaseWeaponBatterySmall
+  id: WeaponProtoPlasmaCutter
+  description: Экспериментальное оружие, может использоваться как сварка.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Basic/proto_plasma_cutter.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Gun
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Weapons/plasma_cutter.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletKinetic
+    fireCost: 100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 750
+  - type: Tool
+    qualities:
+      - Welding

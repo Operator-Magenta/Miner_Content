@@ -1,0 +1,30 @@
+
+- type: entity
+  name: шахтёрский молот
+  parent: BaseItem
+  id: MinerHammer
+  description: Тяжелая кувалда, пригодится для пролома стены, камня или чей-то головы.
+  components:
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/minerhammer.rsi
+    state: pickaxe
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 6
+        Piercing: 1
+        Structural: 12
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 3
+        Structural: 80
+  - type: Item
+    size: 150
+    sprite: Objects/Weapons/Melee/minerhammer.rsi

@@ -1,0 +1,15 @@
+
+- type: tile
+  id: FloorCarpetOfficeYellow
+  name: tiles-office-yellow-carpet-floor
+  sprite: /Textures/Tiles/carpetofficeyellow.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepCarpet
+  barestepSounds:
+    collection: BarestepCarpet
+  friction: 0.25
+  itemDrop: FloorTileItemCarpetOffice
+  heatCapacity: 10000

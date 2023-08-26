@@ -1,0 +1,16 @@
+
+- type: entity
+  parent: DrinkBottleBaseFull
+  id: DrinkGingerAleBottleFull
+  name: имбирный эль
+  description: Напиток сделаный из корня имбиря. Подождите, он же безалкогольный!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: GingerAle
+          Quantity: 50
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/gingeralebottle.rsi

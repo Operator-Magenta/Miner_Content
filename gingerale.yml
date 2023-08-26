@@ -1,0 +1,17 @@
+
+- type: reagent
+  id: GingerAle
+  name: reagent-name-ginger-ale
+  parent: BaseDrink
+  desc: reagent-desc-ginger-ale
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: medicine
+  color: "#FFFF91"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Dylovene
+        amount: 0.1
